@@ -1,0 +1,49 @@
+#modo {
+  width: 30px;
+  font-size: 70px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.dark {
+  background: #333;
+}
+.dark div {
+  color: white;
+}
+.dark .navbar {
+  background: #333;
+  color: white;
+}
+.dark a {
+  color: white;
+}
+.dark .card-body {
+  background: #333;
+}
+.dark .navbar-expand-lg .bg-light {
+  background: #333;
+  color: white;
+}
+.dark .navbar {
+  background: #333;
+}
+.dark .accordion-collapse{
+  background: #333;
+  color: white;
+}
+
+/* popup */
+.dark .modal-body{
+  background: #333;
+  color: white;
+}
+.dark .modal-header{
+  background: #333;
+  color: white;
+}
+.dark .modal-footer{
+  background: #333;
+  color: white;
+}
+/* fin popup */
