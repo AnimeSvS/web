@@ -5,9 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/docs/css/bootstrap.css">
-    <link rel="stylesheet" href="/docs/css/style.css">
-    <link rel="stylesheet" href="/docs/css/dark.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark.css">
+    <title>Document</title>
+</head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/dark.css">
 
     <!-- iconos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
@@ -19,7 +27,7 @@
     <!-- inicio de narvar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/index.html">Navbar</a>
+            <a class="navbar-brand" href="/index.html">TECHNOLOGY LIMA</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -29,7 +37,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="/docs/index.html">Inicio</a>
+                        <a class="nav-link" href="/index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="tienda.html">Tienda</a>
@@ -60,11 +68,55 @@
         </div>
     </nav>
     <!-- fin de narvar -->
+
     <!-- cuadros -->
     <div class="row row-cols-2 row-cols-md-5 g-4" style="margin-top: 55px;">
         <div class="col">
             <div class="card">
-                <img src="/anime1.jpg" class="card-img-top" alt="...">
+                <img src="/img/anime1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">S/ 150.00</p>
+
+                    <!-- boton popup -->
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        Ver
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Título del modal</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div>
+                                    <img src="/img/anime1.jpg" alt="" style="width:250px;">
+                                </div>
+                                <div class="modal-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus natus nam
+                                    reprehenderit dolores id, omnis error mollitia aperiam aut optio quae exercitationem
+                                    nostrum perspiciatis laborum earum consequuntur dolore voluptatem totam?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">Comprendido</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- fin popup -->
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="/img/anime1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">S/ 150.00</p>
@@ -107,50 +159,16 @@
         </div>
         <div class="col">
             <div class="card">
-                <img src="/anime1.jpg" class="card-img-top" alt="...">
+                <img src="/img/anime1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">S/ 150.00</p>
-
-                    <!-- boton popup -->
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop">
-                        Ver
-                    </button>
-                    <!-- Modal -->
-                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="staticBackdropLabel">Título del modal</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div>
-                                    <img src="/anime1.jpg" alt="" style="width:250px;">
-                                </div>
-                                <div class="modal-body">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus natus nam
-                                    reprehenderit dolores id, omnis error mollitia aperiam aut optio quae exercitationem
-                                    nostrum perspiciatis laborum earum consequuntur dolore voluptatem totam?
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Cerrar</button>
-                                    <button type="button" class="btn btn-primary">Comprendido</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- fin popup -->
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card">
-                <img src="/anime1.jpg" class="card-img-top" alt="...">
+                <img src="/img/anime1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">S/ 150.00</p>
@@ -168,7 +186,25 @@
         </div>
         <div class="col">
             <div class="card">
-                <img src="/anime1.jpg" class="card-img-top" alt="...">
+                <img src="/img/anime1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">S/ 150.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="/img/anime1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">S/ 150.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="/img/anime1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">S/ 150.00</p>
@@ -186,34 +222,7 @@
         </div>
         <div class="col">
             <div class="card">
-                <img src="/anime1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">S/ 150.00</p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <img src="/anime1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">S/ 150.00</p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <img src="/anime1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">S/ 150.00</p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <img src="/anime1.jpg" class="card-img-top" alt="...">
+                <img src="/img/anime1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">S/ 150.00</p>
@@ -237,8 +246,8 @@
     </div>
     <!-- fin de boton -->
 
-    <script src="/docs/js/bootstrap.js"></script>
-    <script src="/docs/js/main.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/main.js"></script>
 
 </body>
 
