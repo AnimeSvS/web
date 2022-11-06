@@ -28,25 +28,28 @@
 .dark .navbar {
   background: #333;
 }
-.dark .accordion-collapse{
+.dark .accordion-collapse {
   background: #333;
   color: white;
 }
 
 /* popup */
-.dark .modal-body{
+.dark .modal-body {
   background: #333;
   color: white;
 }
-.dark .modal-header{
+.dark .modal-header {
   background: #333;
   color: white;
 }
-.dark .modal-footer{
+.dark .modal-footer {
   background: #333;
   color: white;
 }
 /* fin popup */
-.dark .navbar-toggler-icon{
+.dark .navbar-toggler-icon {
+  color: white;
+}
+.dark .carousel-item {
   color: white;
 }

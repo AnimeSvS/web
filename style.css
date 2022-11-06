@@ -264,3 +264,15 @@ input:checked + .slider:before {
 /* fin particulas */
 
 /* !test */
+h4.title {
+  color: #000;
+  margin-bottom: 0.5em;
+  font-size: 1em;
+  line-height: 1.2;
+  font-weight: normal;
+  margin-top: 0px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 13px;
+}

@@ -70,24 +70,34 @@
     <div class="container" style="margin-top: 75px;">
         <div class="row">
             <div class="col-6">
-               
+
                 <p>
-                    <h1>INFORMACION:</h1>
-                    Número: 941625032 <br>
-                    Correo: example@gmail.com <br>
-                    Dirección: Calle no me acuerdo AV N°315 - sin número</p>
+                <h1>INFORMACION:</h1>
+                Número: 941625032 <br>
+                Correo: example@gmail.com <br>
+                Dirección: Calle no me acuerdo AV N°315 - sin número</p>
             </div>
-            <div class="col-8">
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="name@example.com">
+            <form method="POST" action="https://formsubmit.co/andysevas2@gmail.com" enctype="multipart/form-data">
+                <div class="col-8">
+                    <div class="mb-3">
+                        <label class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre" name="name">
+
+                        <label class="form-label">Correo Electronico</labe>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email">
+
+                        <label class="form-label">Asunto</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Asunto" name="subject">
+
+                        <label class="form-label">Contenido</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message">
+                        </textarea>
+
+                        <input class="btn btn-primary" type="submit" value="Enviar">
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Contenido</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-            </div>
+            </form>
         </div>
     </div>
     <!-- fin formulario -->
