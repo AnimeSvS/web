@@ -47,3 +47,6 @@
   color: white;
 }
 /* fin popup */
+.dark .navbar-toggler-icon{
+  color: white;
+}
