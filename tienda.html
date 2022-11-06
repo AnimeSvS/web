@@ -15,6 +15,18 @@
 </head>
 
 <body>
+    <!-- boton flotante -->
+    <div class="containerBotonFlotante">
+        <a class="btn btn-primary btn-wsp" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+            aria-controls="offcanvasExample" style="margin-bottom: 7px;">
+            <div>
+                <i class="bi bi-cart-fill"></i>
+            </div>
+        </a>
+    </div>
+    <!-- fin boton flotante -->
+
+
     <!-- inicio de narvar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
@@ -45,9 +57,6 @@
                         </a>
                     </li>
                 </ul>
-                <!-- inicio de boton carrito -->
-               
-                <!-- fin de boton carrito-->
 
                 <!-- boton de dark -->
                 <label class="switch">
@@ -224,6 +233,130 @@
         </div>
     </div>
     <!-- fin de cuadros -->
+
+
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link px-2 text-muted">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="tienda.html" class="nav-link px-2 text-muted">Tienda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="servicios.html" class="nav-link px-2 text-muted">servicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link px-2 text-muted">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contacto.html" class="nav-link px-2 text-muted">Contacto</a>
+                </li>
+            </ul>
+            <p class="text-center text-muted">© 2022 TECHNOLOGY LIMA</p>
+            <p class="text-center text-muted">By SedyGames</p>
+        </footer>
+    </div>
+    <!-- fin de footer -->
+
+    <!-- structura de carrito de compras -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">CARRITO DE COMPRAS</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                <!-- !----------------------------- -->
+
+                <div class="card mb-3" style="max-width: 640px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="img/productos/laptop1.png" class="img-fluid rounded-start" alt="..."
+                                style="min-width: 50px;">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">
+                                    This is a wider card with supporting text below as a natural
+                                    lead-in to additional
+                                    content. This content is a little bit longer.
+                                </p>
+                                <p class="card-text"><small class="text-muted">PEN: 150.00</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- !-------------------------- -->
+                <div class="card mb-3" style="max-width: 640px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="img/productos/laptop1.png" class="img-fluid rounded-start" alt="..."
+                                style="min-width: 50px;">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">
+                                    This is a wider card with supporting text below as a natural
+                                    lead-in to additional
+                                    content. This content is a little bit longer.
+                                </p>
+                                <p class="card-text"><small class="text-muted">PEN: 150.00</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- !----------------------- -->
+                <div class="card mb-3" style="max-width: 640px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="img/productos/laptop1.png" class="img-fluid rounded-start" alt="..."
+                                style="min-width: 50px;">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">
+                                    This is a wider card with supporting text below as a natural
+                                    lead-in to additional
+                                    content. This content is a little bit longer.
+                                </p>
+                                <p class="card-text"><small class="text-muted">PEN: 150.00</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--! ---------------------------- -->
+            </div>
+            <div>
+                <h5>
+                    SUBTOTAL: S/ 35.08 <br>
+                    TOTAL: S/ 150.15
+
+                </h5>
+            </div>
+            <div class="dropdown mt-3">
+                <center>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="dropdown">
+                        PAGAR
+                    </button>
+                </center>
+
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- fin de estructura -->
+
 
     <script src="bootstrap.js"></script>
     <script src="main.js"></script>

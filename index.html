@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="dark.css">
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- fin iconos -->
+
+
 
     <title>Document</title>
 </head>
@@ -134,44 +139,125 @@
 
     <!-- INICIO DE TEXTO -->
     <div class="card-body">
-        <h1 style="font-weight: bold;"> SEGURIDAD - CALIDAD - CONFIANZA</h1>
+        <h1 style="font-weight: bold;"> <i class="bi bi-alarm"></i> OFERTAS LAS 7 DIAS DE LA SEMANA</h1>
     </div>
     <!-- FIN DE TEXTO -->
 
     <!-- marketing -->
-    <center>
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Productos de segundo uso</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                        <a href="#" class="btn btn-primary">¿Quieres saber mas sobre ... ?</a>
+
+    <!-- cuadros -->
+    <div class="row row-cols-1 row-cols-md-2 g-4" style="margin-top: 55px;">
+        <div class="col">
+            <div class="card">
+                <img src="img/productos/laptop4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-weight:bold; color: red;">Laptop DELL en OFERTA!</h5>
+                    <p class="card-text">Precio: S/ 150.00</p>
+
+                    <!-- boton popup -->
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        Ver
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Laptop DELL - Intel</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div>
+                                    <img src="img/productos/laptop4.png" alt="" style="width:250px;">
+                                </div>
+                                <div class="modal-body">
+                                    PROCESADOR: <a
+                                        href="https://ark.intel.com/content/www/es/es/ark/products/88193/intel-core-i56200u-processor-3m-cache-up-to-2-80-ghz.html"
+                                        target="_blank" rel="noopener noreferrer">Intel® Core™ i5-6200U</a> <br>
+                                    ALMACENAMIENTO: 240GB SSD <br>
+                                    RAM: 8GB <br>
+                                    TECLADO: Iluminado - Español <br>
+                                    PANTALLA: 21" HD
+
+                                </div>
+                                <center>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary"
+                                            data-bs-dismiss="modal">OK</button>
+
+                                        <!-- <button type="button" class="btn btn-primary">Comprendido</button> -->
+                                    </div>
+                                </center>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Productos de segundo uso</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                        <a href="#" class="btn btn-primary">¿Quieres saber mas sobre ... ?</a>
-                    </div>
+                    <!-- fin popup -->
                 </div>
             </div>
         </div>
+        <div class="col">
+            <div class="card">
+                <img src="img/productos/laptop4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">S/ 150.00</p>
 
-    </center>
+                    <!-- boton popup -->
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        Ver
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Título del modal</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div>
+                                    <img src="img/productos/laptop3.png" alt="" style="width:250px;">
+                                </div>
+                                <div class="modal-body">
+                                    PROCESADOR: <a href="https://www.amd.com/en/product/8336" target="_blank"
+                                        rel="noopener noreferrer">
+                                        AMD Ryzen™ 7 3700U</a> <br>
+                                    ALMACENAMIENTO: 512GB SSD <br>
+                                    RAM: 8GB <br>
+                                    TECLADO: Español <br>
+                                    PANTALLA: 21" HD
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- fin popup -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fin de cuadros -->
+
+
     <!-- marketing -->
 
     <!-- TEXT DE MARCA -->
-    <div class="card-body">
+    <div class="card-body" style="margin-top: 35px;">
         <h1 style="font-weight: bold;"> MARCAS MAS RECONOCIDAS</h1>
     </div>
     <!-- FIN DE TEXTO MARCA -->
 
     <!--! marcas -->
     <center>
+
         <div class="marquee">
             <ul class="marquee-content">
                 <li><img src="img/marcas/laptops/acer.png" alt="" srcset=""></li>
@@ -181,11 +267,9 @@
                 </li>
                 <li><img src="img/marcas/laptops/lenovo.png" alt="" srcset="">
                 </li>
-
-
-
             </ul>
         </div>
+
     </center>
 
     <!--! fin de marcas -->
@@ -196,19 +280,19 @@
         <footer class="py-3 my-4">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
                 <li class="nav-item">
-                    <a href="" class="nav-link px-2 text-muted">Home</a>
+                    <a href="index.html" class="nav-link px-2 text-muted">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link px-2 text-muted">Feartures</a>
+                    <a href="tienda.html" class="nav-link px-2 text-muted">Tienda</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link px-2 text-muted">Pricing</a>
+                    <a href="servicios.html" class="nav-link px-2 text-muted">servicio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link px-2 text-muted">FAQs</a>
+                    <a href="blog.html" class="nav-link px-2 text-muted">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link px-2 text-muted">About</a>
+                    <a href="contacto.html" class="nav-link px-2 text-muted">Contacto</a>
                 </li>
             </ul>
             <p class="text-center text-muted">© 2022 TECHNOLOGY LIMA</p>
