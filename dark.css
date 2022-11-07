@@ -18,9 +18,9 @@
 .dark a {
   color: white;
 }
-.dark .card-body {
+/* .dark .card-body {
   background: #333;
-}
+} */
 .dark .navbar-expand-lg .bg-light {
   background: #333;
   color: white;

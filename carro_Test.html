@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carrof</title>
+    <script>
+        window.onload = function () {
+            // Variables
+            let baseDeDatos = [
+                {
+                    id: 1,
+                    nombre: 'Celeste',
+                    precio: 3.00,
+                    imagen: 'https://upload.wikimedia.org/wikipedia/commons/7/75/Celeste_box_art_final_2-png'
+                },
+                {
+                    id: 2,
+                    nombre: 'To the moon',
+                    precio: 0.50,
+                    imagen: 'https://il1c.3djuegos.com/juegos/7883/to_the_moon/fotos/noticias/to_the_moon-4550862.jpg'
+                },
+                {
+                    id: 3,
+                    nombre: 'TBOI',
+                    precio: 16.00,
+                    imagen: 'https://vignette.wikia.nocookie.net/ficcion-sin-limites/images/9/99/Isaac.png/revision/latest/top-crop/width/368/height/450?cb=20190102200548&path-prefix=es'
+                },
+                {
+                    id: 4,
+                    nombre: 'Duck Game',
+                    precio: 15.00,
+                    imagen: 'https://steamcdn-a.akamaihd.net/steam/apps/312530/capsule_616x353.jpg?t=1571948394'
+                }
+            ]
+
+
+
+            let $items = document.querySelector('#items');
+            let carrito = [];
+            let total = 0;
+            let $carrito = document.querySelector('#carrito');
+            let $total = document.querySelector('#total');
+            // Funciones
+            function renderItems() {
+                for (let info of baseDeDatos) {
+                    // Estructura
+                    let miNodo = document.createElement('div');
+                    miNodo.classlist.add('card', 'col-sm-4');
+                    // Body
+                    let miNodoCardBody = document.createElement('div');
+                    miNodoCardBody.classList.add('card-body');
+                    // Título
+                    let miNodoTitle = document.createElement('h5');
+                    miNodoTitle.classlist.add('card-title');
+                    miNodoTitle.textContentinfo['nombre'];
+                    // Imagen
+                    let miNodoImagen = document.createElement('img');
+                    miNodoImagen.classList.add('img-fluid');
+                    miNodoImagen.setAttribute('src', info['imagen']);
+                    // Precio
+                    let miNodoPrecio = document.createElement('p');
+                    miNodoPrecio.classList.add('card-text');
+                    miNodoPrecio.textContent = info['precio'] + '€';
+                    //boton
+                    let miNodoBoton = document.createElement('button');
+                    miNodoBoton.classList.add('btn', 'btn-btn-primary');
+                    miNodoBoton.textContent = '+';
+                    miNodoBoton.setAttribute('marcador', info['id']);
+                    miNodoBoton.addEventListener('click', anyadirCarrito);
+                    //Insertamos
+                    miNodoCardBody.appendChild(miNodoImagen)
+                    miNodoCardBody.appendChild(miNodoTitle)
+                    miNodoCardBody.appendChild(miNodoPrecio)
+                    miNodoCardBody.appendChild(miNodoBoton)
+                    miNodo.appendChild(miNodoCardBody);
+                    $items.appendChild(miNodo)
+                }
+            }
+
+            function anyadirCarrito() {
+                // añadimos carro
+                carrito.push(this.getAttribute('marcador'))
+                // calculo el total
+                calcularTotal();
+                // renderizar carro
+                renderizarCarrito();
+            }
+
+            function renderizarCarrito(){
+                // vaciamos tdoo
+                $carrito.textContent = '';
+                // quitamos duplicados
+                let carritoSinDuplicados = [...new Set(carrito)];
+                // generamos los nodos a partir del carrito
+                carritoSinDuplicados.forEach(function(item, indice){
+                    // obtenmos el item que necesitamos de la variable base de datos
+                    let miItem = baseDeDatos.filter(function(itemBaseDatos){
+                        return itemBaseDatos['id'] = item;
+                    });
+                    // cuenta el de veces que se repita el producto
+                    let  numeroUnidadesItem = carrito.reduce(function (total, itemId){
+                        return itemId === item ? total += 1 :total;
+                    }, 0);
+                    // creamos el nodo del item carrito
+                    let miNodo = document.createElement('li');
+                    miNodo.classList.add('list-group-item', 'text-right', 'mx.2');
+                    miNodo.textContent = ¨¨
+                })
+            }}
