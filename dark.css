@@ -18,9 +18,9 @@
 .dark a {
   color: white;
 }
-/* .dark .card-body {
-  background: #333;
-} */
+.dark .card-body {
+  color: rgb(255, 255, 255);
+}
 .dark .navbar-expand-lg .bg-light {
   background: #333;
   color: white;
@@ -51,5 +51,21 @@
   color: white;
 }
 .dark .carousel-item {
+  color: white;
+}
+.dark .div.card-body{
+  color: white;
+}
+.dark #blogDark{
+  color: rgb(0, 0, 0);
+}
+
+.dark #tarjetaTienda{
+background-color: #333;
+}
+.dark #tarjetaServicios{
+  color: rgb(0, 0, 0);
+}
+.dark #ofertaTitulo{
   color: white;
 }
